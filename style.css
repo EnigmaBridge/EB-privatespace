@@ -229,9 +229,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 .voffset-md{
 	margin-top:50px;
 }
-.voffset-lg{
-	margin-top:80px;
-}
 
 /* Column No Gutters */
 
@@ -246,112 +243,66 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
-#bloc-1 h2{
-	font-size: 28px;
-	line-height: 40px;
+#bloc-0 h5{
+	font-size: 16px;
+	line-height: 22px;
 }
 #bloc-1 h3{
 	font-size: 22px;
 }
 #bloc-1 p{
 	font-size: 16px;
-	line-height: 20px;
 }
-#bloc-2 h3{
-	font-size: 22px;
-}
-#bloc-2 p{
+#bloc-3 p{
 	font-size: 16px;
+	line-height: 20px;
 }
 #bloc-4 p{
 	font-size: 16px;
-	line-height: 20px;
 }
-#bloc-5 p{
+#bloc-7 p{
 	font-size: 16px;
+	line-height: 20px;
 }
 #bloc-8 p{
 	font-size: 16px;
 	line-height: 20px;
 }
-#bloc-9 p{
-	font-size: 16px;
-	line-height: 20px;
-}
-#bloc-10 h3{
+#bloc-9 h3{
 	font-size: 17px;
 }
-#bloc-10 p{
+#bloc-9 p{
 	font-size: 14.000000953674316px;
 }
-#bloc-11 p{
+#bloc-10 p{
 	font-size: 16.000000953674316px;
 }
 #form-contact-us h4{
 	font-size: 17px;
 }
-#bloc-14 p{
+#bloc-13 p{
 	font-size: 16px;
+}
+#bloc-14 h3{
+	font-size: 17px;
+}
+#bloc-14 p{
+	line-height: 20px;
+	font-size: 13px;
 }
 #bloc-15 h3{
 	font-size: 17px;
 }
 #bloc-15 p{
-	line-height: 20px;
-	font-size: 13px;
-}
-#bloc-16 h3{
-	font-size: 17px;
-}
-#bloc-16 p{
 	font-size: 13.000000953674316px;
 }
-#bloc-18 h3{
-	font-size: 17px;
-}
-#bloc-18 p{
-	font-size: 13.000000953674316px;
-}
-#bloc-19 h3{
-	font-size: 24px;
-	line-height: 26px;
-}
-#bloc-19 p{
-	font-size: 14px;
-	line-height: 20px;
-}
-#bloc-19 a{
-	font-size: 13.000000953674316px;
-}
-#usecases h3{
-	font-size: 17px;
-}
-#usecases p{
-	font-size: 13.000000953674316px;
-}
-#usecases a{
-	font-size: 13.000000953674316px;
-}
-#usecases a{
-	display: block;
-	font-size: 13.000000953674316px;
-}
-#bloc-5x h3{
-	font-size: 17px;
-}
-#bloc-5x p{
-	font-size: 13.000000953674316px;
-}
-#team p{
-	font-size: 17.000000953674316px;
-}
-#bloc-24 h1{
+#bloc-16 h1{
 	font-size: 45px;
 }
-#bloc-24 h3{
+#bloc-16 h3{
 	font-size: 32px;
 }
-#bloc-24 h5{
+#bloc-16 h5{
 	font-size: 20px;
 	line-height: 30px;
 }
@@ -362,7 +313,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #what-is-ps p{
 	font-size: 16px;
 }
-#bloc-27 p{
+#bloc-19 p{
 	font-size: 18px;
 }
 #launch-ps h2{
@@ -383,19 +334,19 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #steps p{
 	font-size: 16px;
 }
-#bloc-31 p{
+#bloc-23 p{
 	font-size: 16px;
 }
-#bloc-32 p{
+#bloc-24 p{
 	font-size: 16.000000953674316px;
 }
-#bloc-33 p{
+#bloc-25 p{
 	font-size: 16.000000953674316px;
 }
-#bloc-34 h3{
+#bloc-26 h3{
 	font-size: 17px;
 }
-#bloc-34 a{
+#bloc-26 a{
 	font-size: 17px;
 }
 
@@ -671,9 +622,6 @@ button{
 }
 /* = Text Widths
 -------------------------------------------------------------- */
-.text-w-90{
-	max-width:90%;
-}
 .text-w-70{
 	max-width:70%;
 }
@@ -706,22 +654,6 @@ button{
 	border-radius:0 0 29px 29px;
 }
 
-/* = Dividers
--------------------------------------------------------------- */
-.divider-h{
-	padding:20px 0;
-}
-.divider-h span{
-	display: block;
-	border-top:1px solid transparent;
-}
-.divider-half{
-	width: 50%;
-	margin: 0 auto;
-}
-.dropdown-menu .divider-h,.dropdown-menu .divider-half{
-	padding:0;
-}
 
 /* = Forms
 -------------------------------------------------------------- */
@@ -774,11 +706,11 @@ iframe{
 	height:auto;
 	margin: 0 auto;
 }
-/* = MacBook Space Grey
+/* = MacBook Gold
 -------------------------------------------------------------- */
 
-.mb-space-grey{
-	background-image:url("img/Apple-Macbook-Space-Grey.png");
+.mb-gold{
+	background-image:url("img/Apple-Macbook-Gold.png");
 }
 /* = Lightbox
 -------------------------------------------------------------- */
@@ -1049,6 +981,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-cloudSpaces{
 	background-image:url("img/cloudSpaces.jpg");
+}
+.bg-cloudSpaces{
+	background-image:url('img/cloudSpaces.jpg');
 }
 
 
