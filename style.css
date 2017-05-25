@@ -260,11 +260,13 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #what-is-ps p{
 	font-size: 16px;
 }
-#bloc-5 p{
-	font-size: 16px;
-	line-height: 20px;
+#bloc-3 h3{
+	font-size: 24.000001907348633px;
 }
-#bloc-8 p{
+#bloc-5 h2{
+	line-height: 60px;
+}
+#bloc-5 p{
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -286,22 +288,32 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #steps p{
 	font-size: 16px;
 }
-#bloc-11 p{
+#bloc-9 p{
 	font-size: 16px;
+}
+#bloc-10 p{
+	font-size: 16px;
+}
+#bloc-12 h2{
+	line-height: 80px;
 }
 #bloc-12 p{
 	font-size: 16px;
+	line-height: 24px;
 }
 #bloc-13 p{
 	font-size: 18px;
 }
 #bloc-15 p{
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 24px;
 }
 #bloc-16 p{
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 24px;
+}
+#bloc-17 h3{
+	font-size: 22px;
 }
 #bloc-17 p{
 	font-size: 16.000000953674316px;
@@ -565,6 +577,15 @@ button{
 	border-radius:34px;
 }
 
+/* = Text Widths
+-------------------------------------------------------------- */
+.text-w-90{
+	max-width:90%;
+}
+.text-center.text-w-sm, .text-center.text-w-md, .text-center.text-w-lg, .text-center.text-w-90, .text-center.text-w-80, .text-center.text-w-70, .text-center.text-w-60, .text-center.text-w-50{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /* = Panels
@@ -802,12 +823,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:#00A7D6!important;
 }
 .ltc-rich-electric-blue:hover{
-	color:#0086ab!important;
-}
-.ltc-rich-electric-blue-2{
-	color:#00A7D6!important;
-}
-.ltc-rich-electric-blue-2:hover{
 	color:#0086ab!important;
 }
 .ltc-white{
