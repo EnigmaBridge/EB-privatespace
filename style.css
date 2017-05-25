@@ -244,8 +244,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 /* Bloc text custom styling */
 
 #bloc-0 h5{
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 18px;
+	line-height: 28px;
 }
 #bloc-1 h3{
 	font-size: 22px;
@@ -253,59 +253,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-1 p{
 	font-size: 16px;
 }
-#bloc-3 p{
-	font-size: 16px;
-	line-height: 20px;
-}
-#bloc-4 p{
-	font-size: 16px;
-}
-#bloc-7 p{
-	font-size: 16px;
-	line-height: 20px;
-}
-#bloc-8 p{
-	font-size: 16px;
-	line-height: 20px;
-}
-#bloc-9 h3{
-	font-size: 17px;
-}
-#bloc-9 p{
-	font-size: 14.000000953674316px;
-}
-#bloc-10 p{
-	font-size: 16.000000953674316px;
-}
-#form-contact-us h4{
-	font-size: 17px;
-}
-#bloc-13 p{
-	font-size: 16px;
-}
-#bloc-14 h3{
-	font-size: 17px;
-}
-#bloc-14 p{
-	line-height: 20px;
-	font-size: 13px;
-}
-#bloc-15 h3{
-	font-size: 17px;
-}
-#bloc-15 p{
-	font-size: 13.000000953674316px;
-}
-#bloc-16 h1{
-	font-size: 45px;
-}
-#bloc-16 h3{
-	font-size: 32px;
-}
-#bloc-16 h5{
-	font-size: 20px;
-	line-height: 30px;
-}
 #what-is-ps p{
 	font-size: 16px;
 	line-height: 22px;
@@ -313,8 +260,13 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #what-is-ps p{
 	font-size: 16px;
 }
-#bloc-19 p{
-	font-size: 18px;
+#bloc-5 p{
+	font-size: 16px;
+	line-height: 20px;
+}
+#bloc-8 p{
+	font-size: 16px;
+	line-height: 20px;
 }
 #launch-ps h2{
 	font-size: 30px;
@@ -334,14 +286,51 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #steps p{
 	font-size: 16px;
 }
-#bloc-23 p{
+#bloc-11 p{
 	font-size: 16px;
 }
-#bloc-24 p{
+#bloc-12 p{
+	font-size: 16px;
+}
+#bloc-13 p{
+	font-size: 18px;
+}
+#bloc-15 p{
+	font-size: 16px;
+	line-height: 22px;
+}
+#bloc-16 p{
+	font-size: 16px;
+	line-height: 22px;
+}
+#bloc-17 p{
 	font-size: 16.000000953674316px;
 }
+#bloc-18 p{
+	font-size: 16px;
+	line-height: 20px;
+}
+#bloc-19 h3{
+	font-size: 17px;
+}
+#bloc-19 p{
+	font-size: 14.000000953674316px;
+}
+#form-contact-us h4{
+	font-size: 17px;
+}
+#bloc-23 h3{
+	font-size: 17px;
+}
+#bloc-23 p{
+	line-height: 20px;
+	font-size: 13px;
+}
+#bloc-25 h3{
+	font-size: 17px;
+}
 #bloc-25 p{
-	font-size: 16.000000953674316px;
+	font-size: 13.000000953674316px;
 }
 #bloc-26 h3{
 	font-size: 17px;
@@ -492,18 +481,6 @@ nav .caret{
 	margin-top:10px;
 	margin-bottom:40px;
 }
-img.mg-sm,img.mg-md,img.mg-lg{
-	margin-top: 0;
-}
-img.mg-sm{
-	margin-bottom:10px;
-}
-img.mg-md{
-	margin-bottom:30px;
-}
-img.mg-lg{
-	margin-bottom:50px;
-}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -529,14 +506,6 @@ button{
 	border-bottom-color:rgba(0,0,0,.1);
 	text-shadow:0 1px 0 rgba(0,0,1,.1);
 	box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
-}
-.btn-wire{
-	background:transparent!important;
-	border:2px solid transparent;
-}
-.btn-wire:hover{
-	background:transparent!important;
-	border:2px solid transparent;
 }
 .btn-xl{
 	padding: 16px 40px;
@@ -585,25 +554,6 @@ button{
 	min-width: 162px;
 }
 
-/* Image Frame */
-.img-frame,.img-frame-md,.img-frame-lg,.img-frame-rd,.img-frame-rd-md,.img-frame-rd-lg{
-	background:#FFF;
-	border:1px solid rgba(0,0,0,0.1);
-	box-shadow:0 2px 2px rgba(0,0,0,0.05);
-	padding:4px;
-}
-.img-frame{
-	border-radius:3px;
-}
-.img-frame-md,.img-frame-lg{
-	border-radius:6px;
-}
-.img-frame-md,.img-frame-rd-md{
-	padding:8px;
-}
-.img-frame-lg,.img-frame-rd-lg{
-	padding:14px;
-}
 /*  Rounded Image */
 .img-rd{
 	border-radius:6px;
@@ -615,20 +565,6 @@ button{
 	border-radius:34px;
 }
 
-/* = Text & Icon Styles
--------------------------------------------------------------- */
-.sm-shadow{
-	text-shadow:0 1px 2px rgba(0,0,0,.3);
-}
-/* = Text Widths
--------------------------------------------------------------- */
-.text-w-70{
-	max-width:70%;
-}
-.text-center.text-w-sm, .text-center.text-w-md, .text-center.text-w-lg, .text-center.text-w-90, .text-center.text-w-80, .text-center.text-w-70, .text-center.text-w-60, .text-center.text-w-50{
-	margin-left: auto;
-	margin-right: auto;
-}
 
 
 /* = Panels
@@ -711,78 +647,6 @@ iframe{
 
 .mb-gold{
 	background-image:url("img/Apple-Macbook-Gold.png");
-}
-/* = Lightbox
--------------------------------------------------------------- */
-
-a[data-lightbox]{
-	position: relative;
-	display: block;
-	text-align: center;
-}
-a[data-lightbox]:hover::before{
-	content:"+";
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-	font-size:32px;
-	width:50px;
-	height:50px;
-	margin-left:-25px;
-	border-radius: 50%;
-	background:rgba(0,0,0,.6);
-	color:#FFF;
-	font-weight:100;
-	z-index: 1;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-}
-a[data-lightbox]:hover img{
-	opacity: 0.6;
-	-webkit-animation-fill-mode: none;
-	animation-fill-mode:none;
-}
-#lightbox-modal .modal-dialog{
-	width:90%;
-	max-width:900px;
-	margin:30px auto 0;
-}
-#lightbox-modal .modal-dialog img{
-	margin: 0 auto;
-}
-.lightbox-caption{
-	padding: 20px;
-	color: #FFF;
-	background: rgba(0,0,0,.5);
-	position: absolute;
-	left: 15px;
-	right: 15px;
-	bottom: 5px;
-}
-.close-lightbox{
-	display: none;
-	font-size: 40px;
-	position: absolute;
-	top:8px;
-	right:20px;
-	z-index: 20;
-}
-.next-lightbox, .prev-lightbox{
-	font-size:20px;
-	color:rgba(255,255,255,.4);
-	transition: all .2s ease-in-out;
-	position: absolute;
-	top:50%;
-	z-index:1;
-}
-.next-lightbox{
-	right:25px;
-}
-.prev-lightbox{
-	left:25px;
-}
-.prev-lightbox:hover, .next-lightbox:hover{
-	color:rgba(255,255,255,.9);
 }
 
 /* = Custom Styling
@@ -891,11 +755,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bgc-rich-electric-blue{
 	background-color:#00A7D6;
 }
-.bgc-rich-electric-blue-2{
-	background-color:#00A7D6;
-}
 .bgc-anti-flash-white{
 	background-color:#F0F0F0;
+}
+.bgc-rich-electric-blue-2{
+	background-color:#00A7D6;
 }
 .bgc-onyx{
 	background-color:#101010;
@@ -931,10 +795,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .btn-onyx:hover{
 	background:#0d0d0d;
 	color:#FFFFFF!important;
-}
-.wire-btn-rich-electric-blue{
-	color:#00A7D6!important;
-	border-color:#00A7D6!important;
 }
 /* Link colour styles */
 
@@ -983,7 +843,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background-image:url("img/cloudSpaces.jpg");
 }
 .bg-cloudSpaces{
-	background-image:url('img/cloudSpaces.jpg');
+	background-image:url("img/cloudSpaces.jpg");
 }
 
 

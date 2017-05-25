@@ -14,6 +14,8 @@
 	<script src="./js/jquery-2.1.0.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
     <title>The Private Space / Dedicated VPN for companies, with own cloud and instant messaging</title>
 	<meta content="/img/logo2-rgb_cropped.gif" property="og:image" />
 <meta content="200" property="og:image:width" />
@@ -62,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="container fill-bloc-top-edge">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/logo2-rgb_cropped_ps.gif" alt="logo" width="300" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/logo2-rgb_cropped_ps.gif" width="300" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -73,13 +75,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<a href="index.html" class="ltc-rich-electric-blue">Home</a>
 					</li>
 					<li>
-						<a href="try-it-free.html" class="ltc-rich-electric-blue">Try free</a>
-					</li>
-					<li>
-						<a href="contact-us.html" class="ltc-rich-electric-blue" target="_blank">Contact Us</a>
+						<a href="index.html" class="ltc-rich-electric-blue" target="_blank">Contact Us</a>
 					</li>
 					<li>
 						<a href="https://enigmabridge.freshdesk.com/support/solutions/19000098261" class="ltc-rich-electric-blue" id="pl-undefined" target="_blank">Support</a>
+					</li>
+					<li>
 					</li>
 				</ul>
 			</div>
@@ -88,17 +89,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h1 class="text-left tc-onyx">
+				<h1 class="text-center tc-onyx mg-sm">
 					Private Network For Companies
 				</h1>
-				<h3 class="text-left mg-lg tc-rich-electric-blue">
+				<h2 class="text-center tc-rich-electric-blue mg-lg">
 					Dedicated VPN With Your Own Cloud
-				</h3>
-				<h5 class="mg-lg  tc-onyx">
-					The Private Space is the right VPN solution for your company or team with a single-sign-on access to a private messaging and an internal file storage. <br><br>Protection from insecure Wi-Fi networks with a privacy “cloak". No more passwords - a dynamic authentication with ultimate security. <br><br>A strong foundation for your compliance with GDPR and other data protection regulations.<br>
+				</h2>
+				<h5 class="mg-lg  text-center tc-onyx">
+					The Private Space is the right VPN solution for your company or team. The Private Space is built with verified security technologies. Its connection keys replace passwords to comply with the most stringent security requirements.<br>
 				</h5>
 				<div class="text-center">
-					<a href="try-it-free.html" class="btn btn-clean btn-lg btn-rich-electric-blue">Try it free</a>
+					<a class="btn btn-clean btn-lg btn-rich-electric-blue" onclick="scrollToTarget('#launch-ps')">Try it free</a>
 				</div>
 			</div>
 			<div class="col-sm-6">
@@ -119,7 +120,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- bloc-0 END -->
 
 <!-- bloc-1 -->
-<div class="bloc bgc-rich-electric-blue tc-white" id="bloc-1">
+<div class="bloc tc-white bgc-rich-electric-blue" id="bloc-1">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-4">
@@ -127,10 +128,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<span class="fa fa-plane icon-round icon-md icon-onyx"></span>
 				</div>
 				<h3 class="text-center mg-md  tc-onyx">
-					Protect your Wi-Fi Connection
+					Protect Wi-Fi Connections
 				</h3>
 				<p class="text-center ">
-					When connected, all your data is encrypted. The Private Space also hides, which websites you visit. Digital privacy in your favorite coffee shop.
+					When connected, all your data is encrypted. The Private Space gives you a privacy cloak against "Death Eaters".
 				</p>
 			</div>
 			<div class="col-sm-4">
@@ -138,10 +139,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<span class="fa fa-group icon-round icon-md icon-onyx"></span>
 				</div>
 				<h3 class="text-center mg-md  tc-onyx">
-					Team Portal
+					Your Private Team Portal
 				</h3>
 				<p class="text-center ">
-					Navigate to http://theprivate.space and enter your portal with links to your team. Add the tiles to quickly reach your internal services. &nbsp;
+					Navigate to http://theprivate.space and enter your portal with links to your team. Add the tiles to share your internal services. &nbsp;
 				</p>
 			</div>
 			<div class="col-sm-4">
@@ -152,7 +153,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					Beyond Passwords
 				</h3>
 				<p class="text-center ">
-					Entry to to the private space is with a special key. It creates a new secret each time you connect. This gives you an ultimate security.
+					Entry to The Private Space is with a special key. It creates a new secret each time you connect. This gives you an ultimate security and compliance.
 				</p>
 			</div>
 		</div>
@@ -160,11 +161,102 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <!-- bloc-1 END -->
 
+<!-- what-is-ps -->
+<div class="bloc tc-onyx bgc-white" id="what-is-ps">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row animated zoomIn">
+					<div class="col-sm-2">
+						<p class="text-center ">
+							protection <br>from insecure WiFi
+						</p>
+					</div>
+					<div class="col-sm-2">
+						<p class="text-center ">
+							local network for connected devices
+						</p>
+					</div>
+					<div class="col-sm-2">
+						<p class="text-center ">
+							access to services inside your office
+						</p>
+					</div>
+					<div class="col-sm-2">
+						<p class="text-center ">
+							private place to share documents&nbsp;
+						</p>
+					</div>
+					<div class="col-sm-2">
+						<p class="text-center ">
+							hub for private instant messaging
+						</p>
+					</div>
+					<div class="col-sm-2">
+						<p class="text-center ">
+							beyond passwords for security compliance
+						</p>
+					</div>
+				</div>
+				<div class="row voffset-md">
+					<div class="col-sm-6">
+						<img src="img/cloud_chatAndfiles.png" class="img-responsive" />
+					</div>
+					<div class="col-sm-6">
+						<h3 class="tc-rich-electric-blue mg-sm">
+							Your private network
+						</h3>
+						<p class=" mg-md">
+							The Private Space is your own private network in the cloud. It is hidden from all but friends or colleagues you invite to it.&nbsp;<br>
+						</p>
+						<h3 class="tc-rich-electric-blue mg-sm">
+							Work securely everywhere
+						</h3>
+						<p class=" mg-md">
+							It protects your data when you use insecure Wi-Fi networks. It even provides anonymity as no-one can see which cloud services you use.&nbsp;<br>
+						</p>
+						<h3 class="tc-rich-electric-blue mg-sm">
+							File sharing and chat
+						</h3>
+						<p class=" mg-md">
+							Its version Office provides a secure storage for your documents, photos, files. It includes a private chat, which automatically shows everyone available in your Private Space.&nbsp;<br>
+						</p>
+						<h3 class="tc-rich-electric-blue mg-sm">
+							Ultimate security without passwords&nbsp;
+						</h3>
+						<p class=" mg-md">
+							Forget passwords, logging to The Private Space is much more secure than passwords and once in, we provide seamless login to the file storage and chat (instant messaging).
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- what-is-ps END -->
+
+<!-- bloc-3 -->
+<div class="bloc bgc-rich-electric-blue d-bloc" id="bloc-3">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
+				<h3 class="statement-bloc-text tc-onyx">
+					“Connecting to The Private Space is like entering a room only you have the keys."
+				</h3>
+				<p class="text-center">
+					<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-3 END -->
+
 <!-- Bloc Group -->
 <div class='bloc-group'>
 
-<!-- bloc-2 -->
-<div class="bloc bloc-tile-2 bgc-white full-width-bloc l-bloc" id="bloc-2">
+<!-- bloc-4 -->
+<div class="bloc bloc-tile-2 bgc-white full-width-bloc l-bloc" id="bloc-4">
 	<div class="container">
 		<div class="row row-no-gutters">
 			<div class="col-sm-12">
@@ -173,10 +265,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-2 END -->
+<!-- bloc-4 END -->
 
-<!-- bloc-3 -->
-<div class="bloc bloc-tile-2 bgc-white tc-onyx" id="bloc-3">
+<!-- bloc-5 -->
+<div class="bloc bloc-tile-2 bgc-white tc-onyx" id="bloc-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -193,52 +285,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-3 END -->
+<!-- bloc-5 END -->
 </div>
 <!-- Bloc Group END -->
 
-<!-- Bloc Group -->
-<div class='bloc-group'>
-
-<!-- bloc-4 -->
-<div class="bloc bloc-tile-2 tc-onyx bgc-white" id="bloc-4">
-	<div class="container">
-		<div class="row row-no-gutters">
-			<div class="col-sm-12">
-				<h2 class="mg-md tc-rich-electric-blue">
-					A Global Virtual Office
-				</h2>
-				<h4 class="mg-md">
-					<strong>Your Headquarters To Control And Secure</strong>
-				</h4>
-				<p>
-					Each Private Space has its own HQ - a dedicated server, which controls access to its virtual space. <br><br>Security of your access keys is profound and so we added an additional layer of protection to protect if from malicious attacks. &nbsp;<br> <br>This separation of key management from data encryption gives us an additional time and mechanisms to detect attacks and restore security of The Private Space if need be.
+<!-- bloc-6 -->
+<div class="bloc tc-onyx bgc-rich-electric-blue" id="bloc-6">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3">
+				<img src="img/dan270.jpg" class="img-responsive img-circle" />
+			</div>
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
+				<h3 class="statement-bloc-text tc-white">
+					“This is a company VPN product designed with many years of enterprise security experience."
+				</h3>
+				<p class="text-center">
+					<strong>Dan, co-founder and CEO</strong>
 				</p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-4 END -->
-
-<!-- bloc-5 -->
-<div class="bloc bgc-white bloc-tile-2 full-width-bloc l-bloc" id="bloc-5">
-	<div class="container">
-		<div class="row row-no-gutters">
-			<div class="col-sm-12">
-				<img src="img/virtualOffice.png" class="img-responsive center-block" />
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-5 END -->
-</div>
-<!-- Bloc Group END -->
+<!-- bloc-6 END -->
 
 <!-- Bloc Group -->
 <div class='bloc-group'>
 
-<!-- bloc-6 -->
-<div class="bloc bloc-tile-2 bgc-white l-bloc" id="bloc-6">
+<!-- bloc-7 -->
+<div class="bloc bloc-tile-2 bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-sm-12">
@@ -247,10 +322,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-6 END -->
+<!-- bloc-7 END -->
 
-<!-- bloc-7 -->
-<div class="bloc bloc-tile-2 tc-onyx bgc-white" id="bloc-7">
+<!-- bloc-8 -->
+<div class="bloc bloc-tile-2 tc-onyx bgc-white" id="bloc-8">
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-sm-12">
@@ -267,12 +342,591 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-7 END -->
+<!-- bloc-8 END -->
 </div>
 <!-- Bloc Group END -->
 
-<!-- bloc-8 -->
-<div class="bloc tc-white bgc-rich-electric-blue-2 hidden-lg hidden-md hidden-sm hidden-xs object-hidden" id="bloc-8">
+<!-- launch-ps -->
+<div class="bloc tc-onyx bgc-anti-flash-white" id="launch-ps">
+	<div class="container bloc-sm">
+		<div class="row voffset">
+			<div class="col-sm-12">
+				<h1 class="text-center mg-lg tc-rich-electric-blue-2">
+					Start your 14 days&rsquo; free trial now
+				</h1>
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="panel">
+							<div class="panel-heading">
+								<h2 class="mg-clear text-center  tc-rich-electric-blue-2">
+									Gateway <br>
+								</h2>
+								<h3 class="mg-md text-center  tc-onyx">
+									Connect to your office, roaming team
+								</h3>
+							</div>
+							<div class="panel-body">
+								<ul class="list-unstyled">
+									<li>
+										<form id="form_gateway" novalidate success-msg="You will shortly receive a ticket from our support system. Your initial access key will be then sent about 20 minutes later." fail-msg="Something broke down, and we can&amp;rsquo;t send your request. Please email us directly at support@enigmabridge.com">
+											<div class="form-group">
+												<select class="form-control selection-price animated pulse animLoop02" id="gatewaysize">
+													<option value="gw5">
+														5 devices - $10/month
+													</option>
+													<option value="gw25">
+														25 devices - $75/month
+													</option>
+													<option value="gw50">
+														50 devices - $150/month
+													</option>
+													<option value="gw100">
+														100 devices - $275/month
+													</option>
+													<option value="gw200">
+														200 devices - $400/month
+													</option>
+													<option value="gwX">
+														More devices / special request
+													</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>
+													Private Space preferred location
+												</label>
+											</div>
+											<div class="form-group">
+												<select class="form-control animDelay04" id="gatewaylocation">
+													<option value="uk">
+														United Kingdom
+													</option>
+													<option value="us-east">
+														United States - East
+													</option>
+													<option value="us-west">
+														United States - West
+													</option>
+													<option value="india">
+														India
+													</option>
+													<option value="germany">
+														Germany
+													</option>
+													<option value="singapore">
+														Singapore
+													</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>
+													Email address
+												</label>
+												<input id="space_admin_email_gw" class="form-control animDelay1 animated pulse animLoop02" required type="email" />
+											</div>
+											<div class="form-group">
+												<label>
+													If you have any question<br>
+												</label><textarea id="gatewaymessage" class="form-control" rows="4" cols="50"></textarea>
+											</div> 
+											<button class="bloc-button btn btn-block btn-xl animDelay2 animated pulse animLoop03 btn-rich-electric-blue" type="submit">
+												Try Now
+											</button>
+											<p class="text-center ">
+												<i>2 weeks free trial - no credit card, <br>just email address</i><br>
+											</p>
+										</form>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Unlimited data
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Fully automated launch
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Add devices with "1-click"
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Use BYOD and laptops for secure access
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Set links to up to 10 local services
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;List of connected users and traffic data
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;OpenVPN security with AES256
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Keys created in secure hardware (CloudHSM)
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Instant access removal for stolen / lost devices
+										</h5>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+					</div>
+					<div class="col-sm-5">
+						<div class="panel">
+							<div class="panel-heading">
+								<h2 class="mg-clear text-center  tc-rich-electric-blue-2">
+									Office
+								</h2>
+								<h3 class="mg-md text-center  tc-onyx">
+									Create cloud office in minutes
+								</h3>
+							</div>
+							<div class="panel-body">
+								<ul class="list-unstyled">
+									<li>
+										<form id="form_office" novalidate success-msg="Your message has been sent and we will be in touch shortly. Feel free to add details to a support ticket in your mailbox." fail-msg="Something broke down, and we can&amp;rsquo;t send your request. Please email us directly at support@enigmabridge.com">
+											<div class="form-group">
+												<select class="form-control selection-price animated pulse animLoop02" id="officesize">
+													<option value="off5">
+														5 devices - $15/month
+													</option>
+													<option value="off15">
+														15 devices - $95/month
+													</option>
+													<option value="off25">
+														25 devices - $150/month
+													</option>
+													<option value="off50">
+														50 devices - $250/month
+													</option>
+													<option value="off100">
+														100 devices - $400/month
+													</option>
+													<option value="offX">
+														More devices / special request
+													</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>
+													Private Space prefered location
+												</label>
+											</div>
+											<div class="form-group">
+												<select class="form-control animDelay04" id="officelocation">
+													<option value="uk">
+														United Kingdom
+													</option>
+													<option value="us-east">
+														United States - East
+													</option>
+													<option value="us-west">
+														United States - West
+													</option>
+													<option value="india">
+														India
+													</option>
+													<option value="germany">
+														Germany
+													</option>
+													<option value="singapore">
+														Singapore
+													</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>
+													Email address
+												</label>
+												<input id="space_admin_email_off" class="form-control animDelay1 animated pulse animLoop02" required type="email" />
+											</div>
+											<div class="form-group">
+												<label>
+													If you have any question
+												</label><textarea id="officemessage" class="form-control" rows="4" cols="50"></textarea>
+											</div> 
+											<button class="bloc-button btn btn-block btn-xl animDelay2 animated pulse animLoop03 btn-rich-electric-blue" type="submit">
+												Try Now (24 hours to launch)<br>
+											</button>
+											<p class=" text-center">
+												<i>2 weeks free trial - no credit card, <br>just email address</i>
+											</p>
+										</form>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Unlimited data
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Fully automated launch
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Add devices with "1-click"
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Use BYOD and laptops for secure access
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Set links to up to 10 local services
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;List of connected users and traffic data
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;OpenVPN security with AES256
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Keys created in secure hardware (CloudHSM)
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Instant access removal for stolen / lost devices
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;File access over web and mounted drives
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;Private instant messaging
+										</h5>
+									</li>
+									<li>
+										<h5 class=" mg-sm tc-rich-electric-blue">
+											<span class="fa fa-check"></span>&nbsp;100GB storage
+										</h5>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- launch-ps END -->
+
+<!-- steps -->
+<div class="bloc tc-onyx bgc-white l-bloc" id="steps">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="mg-md text-left tc-rich-electric-blue-2">
+					Launching your Private Space
+				</h1>
+				<p class="sub-heading  text-left">
+					Each Private Space is a completely independent private cloud and its launch is described in our “<a class="ltc-rich-electric-blue" href="https://enigmabridge.freshdesk.com/solution/articles/19000058153-how-is-your-private-space-launched" target="_blank">How is your Private Space launched</a>” article.&nbsp;You will receive detailed information via emails but the overall process is simple and consists of the following steps. &nbsp;
+				</p>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-12">
+				<p class=" mg-clear">
+					Whoever launches a new Private Space becomes its administrator and manages device access to The Private Space. More at&nbsp;<a class="ltc-rich-electric-blue-2" href="https://enigmabridge.freshdesk.com/solution/folders/19000152194">https://enigmabridge.freshdesk.com/</a>&nbsp;.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- steps END -->
+
+<!-- bloc-11 -->
+<div class="bloc tc-onyx object-hidden hidden-lg hidden-md hidden-sm hidden-xs bgc-white" id="bloc-11">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="mg-md text-center tc-rich-electric-blue">
+					Meet our team
+				</h2>
+				<p class=" mg-lg text-center">
+					We are a group of skilled and experienced security and payments individuals.
+				</p>
+				<div class="row">
+					<div class="col-sm-3">
+						<img src="img/dan270.jpg" class="img-responsive animated swing" />
+						<h3 class="mg-md text-center tc-rich-electric-blue">
+							Dan Cvrcek, PhD
+						</h3>
+						<p class="text-center ">
+							CEO and security expert
+						</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="img/petr270.jpg" class="img-responsive animated swing" />
+						<h3 class="mg-md tc-rich-electric-blue text-center">
+							Petr Svenda, PhD
+						</h3>
+						<p class="text-center ">
+							Crypto prodigy
+						</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="img/dusan270.jpg" class="img-responsive animated swing" />
+						<h3 class="mg-md tc-rich-electric-blue text-center">
+							Dusan Klinec
+						</h3>
+						<p class="text-center ">
+							Senior security engineer
+						</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="img/david270.jpg" class="img-responsive animated swing" />
+						<h3 class="mg-md tc-rich-electric-blue text-center">
+							David Gudjonsson
+						</h3>
+						<p class="text-center ">
+							Chairman and payments expert
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-11 END -->
+
+<!-- bloc-12 -->
+<div class="bloc full-width-bloc tc-onyx bgc-anti-flash-white" id="bloc-12">
+	<div class="container">
+		<div class="row row-no-gutters">
+			<div class="col-sm-6 col-sm-push-6">
+				<img src="img/secure_gateway.jpg" class="img-responsive" />
+			</div>
+			<div class="col-sm-6 col-sm-pull-6">
+				<div class="row voffset">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-1">
+									</div>
+									<div class="col-sm-11">
+										<h2 class="mg-md tc-rich-electric-blue">
+											How The Private Space Works
+										</h2>
+										<h3 class="mg-md tc-rich-electric-blue">
+											Warping the cyberspace to bring you closer
+										</h3>
+										<p>
+											Each Private Space creates a completely independent security and privacy cloak, which makes the internet around invisible.<br><br>There is just your laptop and the center of your Private Space and your team. Everything else disappears behind a secure worm hole.&nbsp;<br>
+										</p>
+										<h3 class="mg-md tc-rich-electric-blue">
+											Locking it all down
+										</h3>
+										<p>
+											Connections to the Private Space are secured with keys. The keys provide much better security than the best of passwords. <br><br>Keys are created with a cloud key management system, with a robust physical security protecting its secrets. This "lock and key" in the cloud has independent security evaluations (FIPS140-2 Level 3, EAL5+) as the basis for your trust. Just these evaluations cost hundreds of thousands of US $ to obtain.&nbsp;<br>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-12 END -->
+
+<!-- bloc-13 -->
+<div class="bloc tc-onyx bgc-rich-electric-blue" id="bloc-13">
+	<div class="container bloc-sm">
+		<div class="row voffset">
+			<div class="col-sm-4">
+				<div class="text-center">
+					<span class="fa fa-random icon-round icon-md icon-white"></span>
+				</div>
+				<h3 class="text-center mg-md tc-white">
+					Remote access to your office
+				</h3>
+				<p class="text-center ">
+					Connect your laptops and smart phones to your office securely from anywhere.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="text-center">
+					<span class="fa fa-coffee icon-round icon-md icon-white"></span>
+				</div>
+				<h3 class="text-center mg-md tc-white">
+					Create virtual office
+				</h3>
+				<p class="text-center ">
+					Create your own virtual office to to share your documents and talk to your team.
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="text-center">
+					<span class="fa fa-arrows-alt icon-round icon-md icon-white"></span>
+				</div>
+				<h3 class="text-center mg-md tc-white">
+					Secure your connection
+				</h3>
+				<p class="text-center ">
+					Connect your devices to the internet securely via insecure networks like Wi-Fi.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-13 END -->
+
+<!-- Bloc Group -->
+<div class='bloc-group'>
+
+<!-- bloc-14 -->
+<div class="bloc bloc-tile-2 tc-onyx bgc-white full-width-bloc l-bloc" id="bloc-14">
+	<div class="container">
+		<div class="row row-no-gutters">
+			<div class="col-sm-12">
+				<img src="img/virtualOffice.png" class="img-responsive" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-14 END -->
+
+<!-- bloc-15 -->
+<div class="bloc bloc-tile-2 bgc-white full-width-bloc tc-onyx" id="bloc-15">
+	<div class="container">
+		<div class="row voffset row-no-gutters">
+			<div class="col-sm-12">
+				<div class="row row-no-gutters">
+					<div class="col-sm-1">
+					</div>
+					<div class="col-sm-11">
+						<h2 class="mg-md tc-rich-electric-blue">
+							Your Global Virtual Office
+						</h2>
+						<h3 class="mg-md tc-rich-electric-blue">
+							Public cloud or your trusted hosting
+						</h3>
+						<p>
+							Each Private Space has its own HQ - a dedicated server, which controls access to its virtual space and provides a secure shared space. <br><br>Implementation of Private Spaces is not dependent on any particular cloud environment. If you have a trusted platform, IT support company, or customers who trust you, we can help integrating Private Spaces on your servers.<br><br>Security of your access keys is profound and so we added an additional layer of protection to protect if from malicious attacks. <br><br>This separation of key management from data encryption between Enigma Bridge and your favourite hosting provider provides an additional time and mechanisms to detect attacks and restore security of The Private Space if need be.<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-15 END -->
+</div>
+<!-- Bloc Group END -->
+
+<!-- bloc-16 -->
+<div class="bloc full-width-bloc tc-onyx bgc-white" id="bloc-16">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-6 col-sm-push-6">
+				<img src="img/privateSpace_how.png" class="img-responsive" />
+			</div>
+			<div class="col-sm-6 col-sm-pull-6">
+				<div class="row row-no-gutters">
+					<div class="col-sm-1">
+					</div>
+					<div class="col-sm-11">
+						<h2 class="mg-md tc-rich-electric-blue">
+							Security
+						</h2>
+						<h3 class="mg-md tc-rich-electric-blue">
+							Verified Technologies and Cloud "Lock and Key"
+						</h3>
+						<p>
+							Each Private Space is an independent private network with its own server and a key “cutting" system. <br><br>The design is built on two main principles. Use of stable, secure technologies with a large user base and a separation of data from key management. <br><br>Access to The Private Space is only allowed with a valid key. The keys provide significantly better security than passwords and you don&rsquo;t have to remember them. You will get a new key for each device you want to use. <br><br>If you lose your smartphone, or a computer gets stolen, the administrator of your Private Space can immediately disable the device&rsquo;s key and keep your Private Space secure from intruders.<br><br>Key management is the crucial aspect of ensuring your security and privacy. We use "secure computers" to protect your keys. These computers are your lock and key in the cloud with independent security validations.&nbsp;<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-16 END -->
+
+<!-- bloc-17 -->
+<div class="bloc bgc-white l-bloc tc-onyx" id="bloc-17">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="mg-md tc-rich-electric-blue">
+					Technology
+				</h2>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-3">
+				<h3 class="mg-md tc-rich-electric-blue">
+					Privacy
+				</h3>
+				<p>
+					Once connected to your Private Space, you maximise security and privacy of your Internet use. Whether you use Facebook, Google, or connect to your blog, others can only see you&rsquo;re connecting to your Private Space.<br> <br>Connect with any Wi-Fi and keep maximum security for your data and privacy for your online habits.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="mg-md tc-rich-electric-blue">
+					Keys and connections
+				</h3>
+				<p>
+					The security of your Private Space depends on the security of connection keys. We create the keys with our CloudHSMs. CloudHSMs are independent on your Private Space. This prevents single points of failure compromising your security.&nbsp;&nbsp;<br> <br>We put a lot of effort into securing keys. No lock-picking or duplicate keys to your Private Space is tolerated.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="mg-md tc-rich-electric-blue">
+					Data security
+				</h3>
+				<p>
+					Your data security depends on many aspects. We always make sure that data in-transit (between your devices and Private Space) are secure. We also enforce access control inside your Private Space. <br> <br>The Office Private Space includes secure file sharing and instant messaging with&nbsp;<a class="ltc-rich-electric-blue" href="https://nextcloud.com" target="_blank">nextCloud</a>.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="mg-md tc-rich-electric-blue">
+					Platform
+				</h3>
+				<p>
+					Instances of Private Spaces can be launched on CentOS or Ubuntu Linux distributions. <br> <br>The question of hosting is an important factor for customers trust and we can help integrating Private Spaces to your servers.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-17 END -->
+
+<!-- bloc-18 -->
+<div class="bloc tc-white bgc-rich-electric-blue-2 hidden-lg hidden-md hidden-sm hidden-xs object-hidden" id="bloc-18">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-6 col-sm-push-6">
@@ -295,10 +949,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-8 END -->
+<!-- bloc-18 END -->
 
-<!-- bloc-9 -->
-<div class="bloc tc-white bgc-rich-electric-blue-2 hidden-lg hidden-md hidden-sm hidden-xs object-hidden" id="bloc-9">
+<!-- bloc-19 -->
+<div class="bloc tc-white hidden-lg hidden-md hidden-sm hidden-xs object-hidden bgc-rich-electric-blue-2" id="bloc-19">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-3">
@@ -348,33 +1002,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-9 END -->
+<!-- bloc-19 END -->
 
-<!-- bloc-10 -->
-<div class="bloc bgc-anti-flash-white l-bloc tc-onyx" id="bloc-10">
+<!-- form-contact-us -->
+<div class="bloc tc-onyx bgc-white full-width-bloc" id="form-contact-us">
 	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-6 col-sm-push-6">
-				<img src="img/privateSpace_how.png" class="img-responsive center-block img-frame" />
+		<div class="row voffset bgc-anti-flash-white ">
+			<div class="col-sm-6">
+				<img src="img/worldAtHand.png" class="img-responsive" />
 			</div>
-			<div class="col-sm-6 col-sm-pull-6">
-				<h2 class="tc-rich-electric-blue mg-md">
-					How The Private Space Works
-				</h2>
-				<h3 class="tc-rich-electric-blue mg-md">
-					It is all about control and trust
-				</h3>
-				<p class="mg-lg  ">
-					Each Private Space creates a completely independent security and privacy cloak. There is a dedicated server, which is your secure gateway and portal, your HQ. <br> <br>Connections to the Private Space are secured with keys. The keys provide much better security than the best of passwords. <br><br>Keys are created with a cloud key management system, with a robust physical security protecting its secrets. This "lock and key" in the cloud has independent security evaluations (<a class="ltc-rich-electric-blue" href="https://en.wikipedia.org/wiki/FIPS_140-2#Level_3" target="_blank">FIPS140-2 Level 3</a>,&nbsp;<a class="ltc-rich-electric-blue" href="https://en.wikipedia.org/wiki/Evaluation_Assurance_Level#EAL5:_Semiformally_Designed_and_Tested" target="_blank">EAL5+</a>) as the basis for your trust. Just these evaluations cost hundreds of thousands of US $ to obtain.&nbsp;
-				</p>
+			<div class="col-sm-6">
+				<form id="form_contact" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<h4 class="mg-md tc-rich-electric-blue ">
+						<strong>Contact Enigma Bridge, the makers of Private Spaces</strong>
+					</h4>
+					<div class="form-group">
+						<label>
+							Name
+						</label>
+						<input id="contact_name" class="form-control" required />
+					</div>
+					<div class="form-group">
+						<label>
+							Email
+						</label>
+						<input id="contact_email" class="form-control" type="email" required />
+					</div>
+					<div class="form-group">
+						<label>
+							Your message, question, request<br>
+						</label><textarea id="contact_message" class="form-control" rows="4" cols="50" required></textarea>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="input_1484" />I want to receive updates from Enigma Bridge
+						</label>
+					</div> 
+					<button class="bloc-button btn btn-block btn-rich-electric-blue" type="submit">
+						Submit
+					</button>
+				</form>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-10 END -->
+<!-- form-contact-us END -->
 
-<!-- bloc-11 -->
-<div class="bloc bgc-anti-flash-white l-bloc" id="bloc-11">
+<!-- bloc-21 -->
+<div class="bloc bgc-anti-flash-white l-bloc" id="bloc-21">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -414,7 +1089,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </div>
-<!-- bloc-11 END -->
+<!-- bloc-21 END -->
 
 <!-- ScrollToTop Button -->
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
@@ -428,7 +1103,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="col-sm-3">
 				<h3 class="mg-md bloc-mob-center-text  tc-rich-electric-blue">
 					About
-				</h3><a class="a-btn a-block bloc-mob-center-text  ltc-white" href="https://enigmabridge.com/index.html#team" target="_blank">Enigma Bridge</a><a href="contact-us.html" class="a-btn a-block bloc-mob-center-text ltc-white ">Contact us</a>
+				</h3><a class="a-btn a-block bloc-mob-center-text  ltc-white" href="https://enigmabridge.com/index.html#team" target="_blank">Enigma Bridge</a><a href="index.html" class="a-btn a-block bloc-mob-center-text ltc-white ">Contact us</a>
 			</div>
 			<div class="col-sm-3">
 				<h3 class="mg-md bloc-mob-center-text  tc-rich-electric-blue">
