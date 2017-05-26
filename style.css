@@ -273,11 +273,16 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	font-size: 16px;
 	line-height: 20px;
 }
+#launch-ps h1{
+	font-size: 30px;
+	line-height: 40px;
+}
 #launch-ps h2{
 	font-size: 30px;
 	line-height: 40px;
 }
 #launch-ps h3{
+	line-height: 24px;
 	font-size: 20px;
 }
 #launch-ps p{
@@ -285,8 +290,11 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	line-height: 25px;
 }
 #launch-ps h5{
+	line-height: 16px;
 	font-size: 16px;
-	line-height: 18px;
+}
+#launch-ps h5{
+	font-size: 16px;
 }
 #steps p{
 	font-size: 16px;
@@ -760,12 +768,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .selection-price{
 	color:#00A7D7!important;
-	font-size:28px;
+	font-size:20px;
 	text-decoration:none;
 	text-transform:none;
 	margin-top:40px;
 	margin-bottom:40px;
-	height:60px;
+	height:30px;
 }
 
 /* = Colour
@@ -840,13 +848,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:#101010!important;
 	border-color:#101010!important;
 }
-.icon-white{
-	color:#ffffff!important;
-	border-color:#ffffff!important;
-}
 .icon-rich-electric-blue{
 	color:#00A7D6!important;
 	border-color:#00A7D6!important;
+}
+.icon-white{
+	color:#ffffff!important;
+	border-color:#ffffff!important;
 }
 
 /* Bloc image backgrounds */
