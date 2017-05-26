@@ -243,6 +243,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
+#bloc-0 h2{
+	font-size: 24px;
+}
 #bloc-0 h5{
 	font-size: 18px;
 	line-height: 28px;
