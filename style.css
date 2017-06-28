@@ -282,16 +282,16 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	line-height: 40px;
 }
 #launch-ps h3{
-	line-height: 24px;
 	font-size: 20px;
+	line-height: 24px;
 }
 #launch-ps p{
 	font-size: 18px;
 	line-height: 25px;
 }
 #launch-ps h5{
-	line-height: 16px;
 	font-size: 16px;
+	line-height: 16px;
 }
 #launch-ps h5{
 	font-size: 16px;
